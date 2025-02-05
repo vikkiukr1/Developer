@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grünes Haus Preloader</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .preloader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #e0f7e7; /* Светло-зеленый фон */
+    }
+
+    .preloader .bubble {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      background-color: #53c273; /* Зеленый */
+      border-radius: 50%;
+      animation: bubble 1.5s infinite ease-in-out;
+    }
+
+    .preloader .bubble:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .preloader .bubble:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .preloader h1 {
+      font-family: 'Arial', sans-serif;
+      color: #2e7d32; /* Темно-зеленый */
+      margin-top: 20px;
+      animation: fadeIn 2s infinite alternate;
+    }
+
+    @keyframes bubble {
+      0%, 100% {
+        transform: translateY(0);
+        opacity: 0.8;
+      }
+      50% {
+        transform: translateY(-20px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="preloader">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <h1>Grünes Haus</h1>
+  </div>
+</body>
+</html>

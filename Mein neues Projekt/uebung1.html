@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine persönliche Webseite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.w3schools.com/w3images/lights.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            margin: 0;
+            color: #4CAF50;
+            font-size: 2rem;
+        }
+        p {
+            margin: 20px auto;
+            padding: 20px;
+            border: 5px solid #4CAF50;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            max-width: 1200px;
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+        .image-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+        }
+        /* Fixierte Box */
+        .fixed-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                padding: 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header mit dem Titel der Seite -->
+    <header>
+        <h1>Willkommen auf meiner Seite!</h1>
+    </header>
+
+    <!-- Absatz mit Willkommenstext -->
+    <p>Herzlich willkommen auf meiner persönlichen Webseite. Hier erfährst du mehr über meine Interessen und Projekte. Viel Spaß beim Erkunden!</p>
+
+    <!-- Eigenständiges Bild im Body -->
+    <div class="image-section">
+        <img src="code-2558220_1280.jpg" alt="Ein eigenständiges Bild im Body-Bereich">
+    </div>
+
+    <!-- Fixierte Box -->
+    <div class="fixed-box">
+        Kontakt: info@example.com
+    </div>
+</body>
+</html>
