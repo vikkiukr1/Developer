@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Büromöbelshop</title>
+    <link rel="stylesheet" href="stil.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #f8f8f8;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: white;
+        }
+        .content {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .impressum {
+            margin-top: 40px;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .contact-form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="produkte.html">Produkte</a></li>
+            </ul>
+        </nav>
+        <h1>Kontakt</h1>
+        <div class="content">
+            <p>Haben Sie Fragen? Kontaktieren Sie uns über das folgende Formular.</p>
+        </div>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Senden</button>
+        </form>
+        <div class="impressum">
+            <h2>Impressum</h2>
+            <p>Büromöbelshop GmbH</p>
+            <p>Mustergasse 1, 12345 Musterstadt</p>
+            <p>Email: kontakt@bueromoebelshop.de</p>
+            <p>Telefon: +49 123 456789</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - Büroausstattung GmbH</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #f8f8f8;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Content Sections */
+        .about-section {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+            align-items: start;
+        }
+
+        .about-content {
+            flex: 2;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 8px;
+        }
+
+        .team-section {
+            margin-top: 40px;
+        }
+
+        .team-grid {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            flex: 1 1 250px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+            }
+
+            .about-image {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="produkte.html">Produkte</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="about-section">
+            <div class="about-content">
+                <h1>Über die Büroausstattung GmbH</h1>
+                <p>Seit über 20 Jahren sind wir Ihr verlässlicher Partner für hochwertige Büroeinrichtungen. Unser Familienunternehmen legt besonderen Wert auf persönliche Beratung und maßgeschneiderte Lösungen für Ihre individuellen Anforderungen.</p>
+                <p>Wir verstehen die Bedeutung eines ergonomischen und produktiven Arbeitsumfelds und unterstützen Sie bei der Gestaltung Ihres perfekten Büroraums.</p>
+            </div>
+            <img src="office-1078869_640.jpg" alt="Unser Geschäft" class="about-image">
+        </div>
+
+        <div class="team-section">
+            <h2>Unser Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="business-3197962_640.jpg" alt="Team Mitglied 1">
+                    <h3>Maria Schmidt</h3>
+                    <p>Geschäftsführerin</p>
+                </div>
+                <div class="team-member">
+                    <img src="business-3264998_640.jpg" alt="Team Mitglied 2">
+                    <h3>Thomas Weber</h3>
+                    <p>Verkaufsberater</p>
+                </div>
+                <div class="team-member">
+                    <img src="woman-1254454_640.jpg" alt="Team Mitglied 3">
+                    <h3>Anna Müller</h3>
+                    <p>Kundenservice</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

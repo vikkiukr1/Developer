@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freizeitaktivitäten Übersicht</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #c2e9fb);
+            color: rgb(75, 85, 224);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu a {
+            color: rgb(52, 75, 230);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        article {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .sport {
+            background-color: #ffe5e0;
+            border: 2px solid #ff5722;
+        }
+
+        .kultur {
+            background-color: #e0e7ff;
+            border: 2px solid #3f51b5;
+        }
+
+        .natur {
+            background-color: #e8ffe5;
+            border: 2px solid #8bc34a;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .sport-list {
+            list-style-type: disc; /* Kreis */
+            color: #ff5722;
+        }
+
+        .kultur-list {
+            list-style-type: circle; /* Hohle Kreise */
+            color: #3f51b5;
+        }
+
+        .natur-list {
+            list-style-type: square; /* Quadrate */
+            color: #8bc34a;
+        }
+
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .external-link:hover {
+            color: #ff5722; /* Farbe ändern, wenn die Maus darüber fährt */
+        }
+
+        h2 { 
+            color: rgb(34, 152, 58);
+            text-align: center; 
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .sport-img {
+            border: 3px solid #ff5722;
+            padding: 5px;
+        }
+
+        .kultur-img {
+            border: 3px solid #3f51b5;
+            padding: 5px;
+        }
+
+        .natur-img {
+            border: 3px solid #8bc34a;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer div {
+            text-align: center;
+        }
+
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            section {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            footer {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logotravel.gif" alt="Logo Reisenbüro" class="logo">
+        <h1>Freizeitaktivitäten Übersicht</h1>
+        <nav class="menu">
+            <a href="#startseite">Startseite</a>
+            <a href="#ueber-uns">Über uns</a>
+            <a href="#agb">AGB</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <section>
+        <article class="sport">
+            <h2>Sport</h2>
+            <a href="https://de.wikipedia.org/wiki/Fu%C3%9Fball" target="_blank" class="external-link">
+                <img class="sport-img" src="Sport.jpg" alt="Fußball spielen">
+            </a>
+            <ul class="sport-list">
+                <li>Fußball spielen - <a href="https://de.wikipedia.org/wiki/Fu%C3%9Fball" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+                <li>Joggen im Park - <a href="https://de.wikipedia.org/wiki/Jogging" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+                <li>Schwimmen im Hallenbad - <a href="https://de.wikipedia.org/wiki/Schwimmsport" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+            </ul>
+        </article>
+
+        <article class="kultur">
+            <h2>Kultur</h2>
+            <a href="https://de.wikipedia.org/wiki/Museum" target="_blank" class="external-link">
+                <img class="kultur-img" src="Kultur.jpg" alt="Museum">
+            </a>
+            <ul class="kultur-list">
+                <li>Besuch eines Museums - <a href="https://de.wikipedia.org/wiki/Museum" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+                <li>Theateraufführung erleben - <a href="https://de.wikipedia.org/wiki/Theater" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+                <li>Historische Stätten erkunden - <a href="https://de.wikipedia.org/wiki/Historische_St%C3%A4tten_und_Denkm%C3%A4ler_in_der_Antarktis" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+            </ul>
+        </article>
+
+        <article class="natur">
+            <h2>Natur</h2>
+            <a href="https://de.wikipedia.org/wiki/Wandern" target="_blank" class="external-link">
+                <img class="natur-img" src="Natur.jpg" alt="Wandern in den Bergen">
+            </a>
+            <ul class="natur-list">
+                <li>Wandern in den Bergen - <a href="https://de.wikipedia.org/wiki/Wandern" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+                <li>Picknick am See - <a href="https://de.wikipedia.org/wiki/Picknick" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+                <li>Vogelbeobachtung im Wald - <a href="https://de.wikipedia.org/wiki/Vogelbeobachtung" target="_blank" class="external-link"><span>Mehr erfahren</span></a></li>
+            </ul>
+        </article>
+    </section>
+
+    <footer>
+        <div>
+            <p>Kontaktieren Sie uns:</p>
+            <p><a href="mailto:info@freizeitaktivitaeten.de">info@freizeitaktivitaeten.de</a></p>
+        </div>
+        <div>
+            <p>Folgen Sie uns:</p>
+            <p><a href="https://www.facebook.com/" target="_blank" class="external-link"><span>Facebook</span></a> | <a href="https://www.instagram.com/" target="_blank" class="external-link"><span>Instagram</span></a> | <a href="https://www.tiktok.com/explore" target="_blank" class="external-link"><span>TikTok</span></a></p>
+        </div>
+        <div>
+            <p>&copy; 2025 Freizeitaktivitäten</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktübersicht</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation Styling */
+        nav {
+            margin: 20px 0;
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        
+        nav a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Produkt Grid */
+        .produkt-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .produkt-karte {
+            flex: 1 1 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .produkt-karte:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .produkt-bild {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .produkt-info {
+            padding: 20px;
+        }
+
+        .produkt-name {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .produkt-beschreibung {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .produkt-preis {
+            font-size: 1.3em;
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        /* Verfügbarkeits-Status */
+        .verfügbar {
+            color: #27ae60;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .nicht-verfügbar {
+            color: #e74c3c;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Tabellen Styling für Desktop */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                text-align: center;
+            }
+
+            .produkt-grid {
+                gap: 20px;
+            }
+
+            .produkt-karte {
+                flex: 1 1 100%;
+            }
+
+            /* Tabelle für Mobile optimieren */
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            th, td {
+                min-width: 120px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .produkt-info {
+                padding: 15px;
+            }
+
+            .produkt-name {
+                font-size: 1.1em;
+            }
+
+            .produkt-preis {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Startseite</a></li>
+                <li><a href="ueber-uns.html" target="_blank">Über uns</a></li>
+                <li><a href="kontakt.html" target="_blank">Kontakt</a></li>
+                <li><a href="produkte.html" target="_blank">Produkte</a></li>
+            </ul>
+        </nav>
+
+        <div class="produkt-grid">
+            <div class="produkt-karte">
+                <a href="#premium-schreibtisch">
+                    <img src="workspace-2985783_640.jpg" alt="Premium Schreibtisch" class="produkt-bild">
+                </a>
+                <div class="produkt-info">
+                    <h3 class="produkt-name">Premium Schreibtisch</h3>
+                    <p class="produkt-beschreibung">Ergonomischer Höhenverstellbarer Schreibtisch aus hochwertigem Holz</p>
+                    <p class="produkt-preis">599,00 €</p>
+                    <p class="verfügbar">✓ Auf Lager</p>
+                </div>
+            </div>
+
+            <div class="produkt-karte">
+                <a href="#buerostuhl-deluxe">
+                    <img src="apartment-1835482_640.jpg" alt="Bürostuhl Deluxe" class="produkt-bild">
+                </a>
+                <div class="produkt-info">
+                    <h3 class="produkt-name">Bürostuhl Deluxe</h3>
+                    <p class="produkt-beschreibung">Ergonomischer Bürostuhl mit Lordosenstütze und verstellbaren Armlehnen</p>
+                    <p class="produkt-preis">299,00 €</p>
+                    <p class="verfügbar">✓ Auf Lager</p>
+                </div>
+            </div>
+
+            <div class="produkt-karte">
+                <a href="#led-schreibtischlampe">
+                    <img src="poster-4122767_640.jpg" alt="LED Schreibtischlampe" class="produkt-bild">
+                </a>
+                <div class="produkt-info">
+                    <h3 class="produkt-name">LED Schreibtischlampe</h3>
+                    <p class="produkt-beschreibung">Dimmbare LED-Lampe mit Farbtemperatureinstellung und USB-Anschluss</p>
+                    <p class="produkt-preis">79,99 €</p>
+                    <p class="nicht-verfügbar">× Ausverkauft</p>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produktname</th>
+                    <th>Beschreibung</th>
+                    <th>Preis</th>
+                    <th>Verfügbarkeit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="premium-schreibtisch">
+                    <td><a href="https://de.wikipedia.org/wiki/Schreibtisch" target="_blank" class="external-link">Premium Schreibtisch</a></td>
+                    <td>Ergonomischer Höhenverstellbarer Schreibtisch aus hochwertigem Holz</td>
+                    <td>599,00 €</td>
+                    <td class="verfügbar">✓ Auf Lager</td>
+                </tr>
+                <tr id="buerostuhl-deluxe">
+                    <td><a href="https://de.wikipedia.org/wiki/Bürostuhl" target="_blank" class="external-link">Bürostuhl Deluxe</a></td>
+                    <td>Ergonomischer Bürostuhl mit Lordosenstütze und verstellbaren Armlehnen</td>
+                    <td>299,00 €</td>
+                    <td class="verfügbar">✓ Auf Lager</td>
+                </tr>
+                <tr id="led-schreibtischlampe">
+                    <td><a href="https://de.wikipedia.org/wiki/Schreibtischlampe" target="_blank" class="external-link">LED Schreibtischlampe</a></td>
+                    <td>Dimmbare LED-Lampe mit Farbtemperatureinstellung und USB-Anschluss</td>
+                    <td>79,99 €</td>
+                    <td class="nicht-verfügbar">× Ausverkauft</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

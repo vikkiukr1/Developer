@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundenzufriedenheitsumfrage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Kundenzufriedenheitsumfrage</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="product">Gekauftes Produkt:</label>
+                <select id="product" name="product">
+                    <option value="produkt1">Produkt 1</option>
+                    <option value="produkt2">Produkt 2</option>
+                    <option value="produkt3">Produkt 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Zufriedenheit:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="satisfaction" value="sehr_zufrieden"> Sehr zufrieden</label>
+                    <label><input type="checkbox" name="satisfaction" value="zufrieden"> Zufrieden</label>
+                    <label><input type="checkbox" name="satisfaction" value="unzufrieden"> Unzufrieden</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Zusätzliche Kommentare:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Absenden</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
